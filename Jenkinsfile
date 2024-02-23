@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-              git branch: 'main', credentialsId: 'docker-cred', url: 'https://github.com/janardhan0210/react1.git'
+                  https://github.com/janardhan0210/react1.git
             }
         }
 
