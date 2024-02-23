@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                  https://github.com/janardhan0210/react1.git
+                https://github.com/janardhan0210/react1.git
             }
         }
 
