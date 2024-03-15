@@ -24,6 +24,7 @@ pipeline {
                 // Build the React application
                 sh 'npm run build'
             }
+            { npm audit fix
         }
 
         stage('Test') {
