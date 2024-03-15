@@ -1,11 +1,14 @@
 pipeline {
     agent any
-    tools{'nodejs'}
+    tools {
+        nodejs 'nodejs' // This assumes you have a Node.js tool configured in Jenkins named 'nodejs'
+    }
 
     stages {
         stage('Checkout') {
             steps {
-                https://github.com/janardhan0210/react1.git
+                // Checkout the repository
+                git 'https://github.com/janardhan0210/react1.git'
             }
         }
 
@@ -31,5 +34,4 @@ pipeline {
             }
         }
     }
-
 }
